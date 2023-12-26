@@ -18,9 +18,9 @@ const TopBar = () => {
                 <Link to="/">CONTACT US</Link>
                 <Link to="/">CAREERS</Link> */}
 
-                <a href="./">CAREERS</a>
-                <a href="./">CAREERS</a>
-                <a href="./">CAREERS</a>
+                <a href="./">SERVICES</a>
+                <a href="./">ABOUT US</a>
+                <a href="./">CONTACT US</a>
                 <a href="./">CAREERS</a>
             </div>
 
