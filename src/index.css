@@ -8,6 +8,9 @@
   --top-bar-link-color: #FFFFFF;
 
   --footer-text-color: #FFFFFF;
+  
+  --home-text-color: #FFFFFF;
+  --home-text-color-secondary: #000;
 }
 
 *{
