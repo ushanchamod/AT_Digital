@@ -1,0 +1,113 @@
+#footer{
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 40px 80px;
+    padding-bottom: 20px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        column-gap: 50px;
+        width: 100%;
+
+        .log-and-intro{
+            width: fit-content;
+            font-family: var(--primary-font);
+            .logo{
+                height: 25px;
+                padding-bottom: 20px;
+            }
+
+            .description{
+                color: var(--footer-text-color);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5;
+                max-width: 500px;
+            }
+        }
+    
+        .tech-and-service{
+            display: flex;
+            justify-content: space-between;
+            column-gap: 50px;
+
+            ul{
+                li{
+                    list-style: none;
+                    padding-bottom: 10px;
+                    font-family: var(--primary-font);
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: var(--footer-text-color);
+
+                    &:first-child{
+                        font-weight: 500;
+                        white-space: nowrap;
+                        font-size: 21px;
+                        padding-bottom: 20px;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    .bottom{
+        border-top: 1px solid var(--footer-text-color);
+        margin: 0 5%;
+        margin-top: 20px;
+        
+        p{
+            font-family: var(--primary-font);
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--footer-text-color);
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        padding: 40px 40px;
+        padding-bottom: 20px;
+        
+        .top{
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+            column-gap: 0px;
+
+            .tech-and-service{
+                justify-content: flex-start;
+                margin-top: 35px;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 400px){
+        padding: 40px 20px 20px 20px;
+        
+        .top{
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+            column-gap: 0px;
+
+            .tech-and-service{
+                flex-direction: column;
+
+                .tech{
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
