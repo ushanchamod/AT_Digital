@@ -1,7 +1,28 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import Logo from '../../../assets/Logo.svg'
 import './style.scss'
 import { FaAlignJustify } from "react-icons/fa";
+
+
+const top_bar_links = [
+  {
+    name: 'SERVICES',
+    link: '/'
+  },
+  {
+    name: 'ABOUT US',
+    link: '/about'
+  },
+  {
+    name: 'CONTACT US',
+    link: '/contact'
+  },
+  {
+    name: 'CAREERS',
+    link: '/careers'
+  },
+
+]
 
 const TopBar = () => {
   return (
@@ -13,15 +34,11 @@ const TopBar = () => {
         <div className="links-container">
             <FaAlignJustify className='icon' />
             <div className="link">
-                {/* <Link to="/">SERVICES</Link>
-                <Link to="/">ABOUT US</Link>
-                <Link to="/">CONTACT US</Link>
-                <Link to="/">CAREERS</Link> */}
-
-                <a href="./">SERVICES</a>
-                <a href="./">ABOUT US</a>
-                <a href="./">CONTACT US</a>
-                <a href="./">CAREERS</a>
+              {
+                top_bar_links.map((link, index) => (
+                  <NavLink to={link.link} key={index}>{link.name}</NavLink>
+                ))
+              }
             </div>
 
         </div>
