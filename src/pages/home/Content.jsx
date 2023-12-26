@@ -44,7 +44,9 @@ const Card = ({title, phase, button_title, img}) => {
             <div className="card_content">
                 <h2>{title}</h2>
                 <p>{phase}</p>
-                <Button title={button_title} />
+                <div styleName='btn'>    
+                    <Button title={button_title} />
+                </div>
             </div>
         </div>
     )
