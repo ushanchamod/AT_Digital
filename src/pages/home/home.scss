@@ -4,12 +4,17 @@
 
     .banner {
         position: relative;
-        max-height: calc(100vh - 77px);
-        margin-top: 77px;
+        // max-height: calc(100vh - 77px);
+        height: 100vh;
+        // margin-top: 77px;
+        display: block;
+        overflow: hidden;
+
 
         .image {
             margin: 0;
             padding: 0;
+            height: 100vh;
 
             img {
                 width: 100%;
@@ -20,10 +25,10 @@
 
         .content {
             position: absolute;
-            bottom: 0;
+            bottom: 50px;
             width: 500px;
             padding: 20px 40px;
-            margin: 63px 80px;
+            margin: 0px 80px;
             box-sizing: border-box;
             overflow: hidden;
             background: linear-gradient(257deg, #1CBDDD 27.86%, #4DCA79 100%), #FFF;
@@ -42,7 +47,7 @@
 
 
     #home-content {
-        margin-top: 1vw;
+        margin-top: 50px;
         box-sizing: border-box;
 
         .card {
@@ -105,8 +110,15 @@
     }
 
     @media screen and (max-width: 870px) {
+        #home-content {
+            margin-top: 50px;
+        }
+    }
+
+    @media screen and (max-width: 880px) {
         .banner {
             max-height: 100%;
+            overflow: visible;
 
             .content {
                 position: relative;
@@ -117,6 +129,7 @@
         }
 
         #home-content {
+            margin-top: 150px;
             .card {
                 width: 90%;
             }
@@ -125,6 +138,7 @@
 
     @media screen and (max-width: 668px) {
         #home-content {
+            margin-top: 200px;
             .card {
                 width: 100%;
                 flex-direction: column;
