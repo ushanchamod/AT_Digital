@@ -1,9 +1,9 @@
 import Banner from './Banner'
 import Content from './Content'
-import './home.scss'
+import './service.scss'
 
 
-const Home = () => {
+const Service = () => {
   return (
     <div id="home">
         <Banner />
@@ -12,4 +12,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Service
